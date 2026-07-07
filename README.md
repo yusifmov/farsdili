@@ -8,7 +8,7 @@ The Persian-language learning site **farsdili.az**, migrated from WordPress to D
 
 - `docs/` — dərslər (lessons), curriculum order via `sidebar_position`. Served under `/dersler`.
 - `blog/` — məqalələr (articles). Served under `/meqaleler`.
-- `src/pages/` — Haqqımızda, Privacy Policy, and the homepage.
+- `src/pages/` — the homepage.
 - `static/` — statik fayllar (`CNAME` for the custom domain, images).
 
 Alfabet və qrammatika cədvəlləri orijinal HTML formatında saxlanılıb (colspan/rowspan və fars əlifbası üçün). Bunun işləməsi üçün `docusaurus.config.js` faylında `markdown.format: 'detect'` təyin edilib — `.md` faylları CommonMark kimi emal olunur.

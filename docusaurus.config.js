@@ -95,7 +95,6 @@ const config = {
             label: 'Dərslər',
           },
           {to: '/meqaleler', label: 'Məqalələr', position: 'left'},
-          {to: '/haqqimizda', label: 'Haqqımızda', position: 'left'},
           {
             href: 'https://github.com/yusifmov/farsdili',
             label: 'GitHub',
@@ -112,13 +111,6 @@ const config = {
               {label: 'Dərslərin siyahısı', to: '/dersler'},
               {label: 'Fars əlifbası', to: '/dersler/fars-elifbasi-1'},
               {label: 'Məqalələr', to: '/meqaleler'},
-            ],
-          },
-          {
-            title: 'Sayt',
-            items: [
-              {label: 'Haqqımızda', to: '/haqqimizda'},
-              {label: 'Məxfilik siyasəti', to: '/privacy-policy'},
             ],
           },
           {
