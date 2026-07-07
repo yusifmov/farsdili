@@ -41,7 +41,6 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: 'dersler',
-          editUrl: 'https://github.com/yusifmov/farsdili/tree/main/',
           showLastUpdateTime: false,
         },
         blog: {
@@ -58,7 +57,6 @@ const config = {
             title: 'FARS DİLİ DƏRSLƏRİ — Məqalələr',
             copyright: `Copyright © ${new Date().getFullYear()} farsdili.az`,
           },
-          editUrl: 'https://github.com/yusifmov/farsdili/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'ignore',
           onUntruncatedBlogPosts: 'ignore',
