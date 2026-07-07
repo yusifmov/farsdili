@@ -1,0 +1,49 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 5rem 0 4.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(1200px 400px at 50% -10%, rgba(255, 255, 255, 0.18), transparent 70%),
+    linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 60%, var(--ifm-color-primary-light) 100%);
+}
+
+.heroTitle {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3.5rem 1rem 3rem;
+  }
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+}
