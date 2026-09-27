@@ -1,0 +1,136 @@
+.hero {
+  padding: 5rem 0 4.5rem;
+  text-align: center;
+  color: #fff;
+  background:
+    radial-gradient(1200px 400px at 50% -10%, rgba(255, 255, 255, 0.18), transparent 70%),
+    linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 60%, var(--ifm-color-primary-light) 100%);
+}
+
+.kicker {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.whatsapp {
+  background: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+.whatsapp:hover {
+  background: #1ebe5a;
+  border-color: #1ebe5a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+.sectionAlt {
+  padding: 3.5rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.book {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top: 4px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 1.5rem 1.6rem 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.bookHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.bookNo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fd-accent);
+}
+
+.bookTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.together {
+  margin: 1.5rem auto 0;
+  max-width: 760px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.feature h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.4rem;
+}
+.feature p {
+  margin: 0;
+}
+
+.signup {
+  max-width: 720px;
+  text-align: center;
+}
+.small {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 1rem 3rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}

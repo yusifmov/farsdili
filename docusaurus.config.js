@@ -71,6 +71,8 @@ const config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
+          // Answer pages of the books are reached by QR code and are noindex; only /cavablar (the list) is indexed.
+          ignorePatterns: ['/cavablar/kitab-*/**'],
         },
       }),
     ],
@@ -99,6 +101,7 @@ const config = {
             label: 'Dərslər',
           },
           {to: '/meqaleler', label: 'Məqalələr', position: 'left'},
+          {to: '/kitablar', label: 'Kitablar', position: 'left'},
           {
             href: 'https://github.com/yusifmov/farsdili',
             label: 'GitHub',
@@ -115,6 +118,8 @@ const config = {
               {label: 'Dərslərin siyahısı', to: '/dersler'},
               {label: 'Fars əlifbası', to: '/dersler/fars-elifbasi-1'},
               {label: 'Məqalələr', to: '/meqaleler'},
+              {label: 'Kitablar', to: '/kitablar'},
+              {label: 'Kitabların cavabları', to: '/cavablar'},
             ],
           },
           {

@@ -3,6 +3,8 @@
  * Palette is inspired by Persian turquoise tilework with a warm gold accent.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&display=swap');
+
 :root {
   --ifm-color-primary: #0d8b7e;
   --ifm-color-primary-dark: #0c7d72;
@@ -104,3 +106,12 @@ article p {
   border-color: var(--fd-accent-dark);
   color: #fff;
 }
+
+/* Persian text in answer pages (cavablar): right-to-left, Naskh font, isolated from the Azerbaijani text */
+.fa {
+  font-family: 'Noto Naskh Arabic', Tahoma, serif;
+  direction: rtl;
+  unicode-bidi: isolate;
+  font-size: 1.2em;
+}
+.cavab-table td, .cavab-table th { text-align: center; }
