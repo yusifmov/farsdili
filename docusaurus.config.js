@@ -78,6 +78,25 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // 2026-10-04: two books became three; old answer links (/cavablar/kitab-2/…, /cavablar/kitab-1/…) keep working.
+        createRedirects(existingPath) {
+          if (existingPath === '/cavablar/soz-ehtiyati/bolme-2') return ['/cavablar/kitab-2/v2'];
+          if (existingPath.startsWith('/cavablar/qrammatika/')) {
+            return [existingPath.replace('/cavablar/qrammatika/', '/cavablar/kitab-2/')];
+          }
+          if (existingPath.startsWith('/cavablar/oxu/')) {
+            return [existingPath.replace('/cavablar/oxu/', '/cavablar/kitab-1/')];
+          }
+          return undefined;
+        },
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
