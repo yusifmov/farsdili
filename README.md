@@ -34,8 +34,8 @@ Source → GitHub Actions**.
 
 ## Kitablar və cavablar / Books and answers
 
-- `src/pages/kitablar.js` — the two Persian textbooks' promo page (`/kitablar`), early sign-up via WhatsApp.
+- `src/pages/kitablar.js` — the three Persian textbooks' promo page (`/kitablar`), early sign-up via WhatsApp.
 - `src/pages/cavablar/index.mdx` — indexed list of all answer pages (`/cavablar`).
-- `src/pages/cavablar/kitab-2/bolme-N.mdx`, `kitab-1/metn-N.mdx` — answers of each book unit, reached by the QR code
+- `src/pages/cavablar/qrammatika/bolme-N.mdx`, `soz-ehtiyati/bolme-N.mdx`, `oxu/metn-N.mdx` — answers of each book unit, reached by the QR code
   printed in the book; `noindex` and excluded from the sitemap (`ignorePatterns` in `docusaurus.config.js`).
 The books themselves are written in a separate repo (`fars-dili-kitabi`).

@@ -11,25 +11,36 @@ const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
 
 const BOOKS = [
   {
-    no: 'Kitab 1',
+    no: 'Qrammatika',
+    title: 'Fars dilinin qrammatikası',
+    fa: 'دستور زبان فارسی',
+    points: [
+      'Fars dilinin qrammatikasının geniş izahı: 94 bölmə, A1-dən B2-yə qədər',
+      'Hər bölmədə izah, Azərbaycan dili ilə müqayisə, danışıq dili və çalışmalar',
+      'Yazı və tələffüzdən başlayaraq feil zamanlarına, mürəkkəb cümlələrə və söz yaradıcılığına qədər',
+      'Tehran danışıq dilinə ayrıca fəsil',
+    ],
+  },
+  {
+    no: 'Söz ehtiyatı',
+    title: 'Fars dilinin söz ehtiyatı',
+    fa: 'واژگان فارسی',
+    points: [
+      'Söz ehtiyatını artırmaq üçün 49 mövzu: gündəlik həyat, səyahət, sənədlər, sərhəd və gömrük',
+      'Mürəkkəb feillər, atalar sözləri və idiomlar',
+      'Azərbaycan dili ilə ortaq sözlər və “yalançı dostlar”',
+      'Söz cədvəlləri, ən çox işlənən sözlərin öyrənilməsi və düzgün işlədilmə qaydaları',
+    ],
+  },
+  {
+    no: 'Oxu',
     title: 'Fars dilində oxu',
     fa: 'خواندن فارسی',
     points: [
       'Oxuyub yazmağı öyrənmək üçün dərslər',
-      'A1-dən B2-yə qədər 46 oxu mətni',
+      'A1-dən B2-yə qədər 52 oxu mətni',
       'Hər mətndə lüğət, anlama sualları, söz çalışmaları və mətnin Tehran danışıq dilində dialoqu',
       'İran və Azərbaycanın ortaq mədəniyyəti haqqında mətnlər: Nizami, Şəhriyar, Novruz, Təbriz, klassik poeziya',
-    ],
-  },
-  {
-    no: 'Kitab 2',
-    title: 'Fars dili: qrammatika və söz ehtiyatı',
-    fa: 'دستور زبان و واژگان',
-    points: [
-      'Fars dilinin qrammatikasının geniş izahı',
-      'Söz ehtiyatını artırmaq üçün mövzular: gündəlik mövzular, mürəkkəb feillər, ortaq sözlər',
-      'Hər bölmədə izah, Azərbaycan dili ilə müqayisə, danışıq dili və çalışmalar',
-      'Söz cədvəlləri, ən çox işlənən sözlərin öyrənilməsi və düzgün işlədilmə qaydaları',
     ],
   },
 ];
@@ -45,14 +56,14 @@ export default function Kitablar() {
   return (
     <Layout
       title="Fars dili kitabları"
-      description="Azərbaycan dilli tələbələr üçün iki fars dili kitabı: “Fars dilində oxu” və “Fars dili: qrammatika və söz ehtiyatı”. Əvvəlcədən yazılmaq üçün WhatsApp ilə əlaqə saxlayın.">
+      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Əvvəlcədən yazılmaq üçün WhatsApp ilə əlaqə saxlayın.">
       <header className={styles.hero}>
         <div className="container">
           <p className={styles.kicker}>Tezliklə</p>
           <Heading as="h1" className={styles.title}>Fars dili kitabları</Heading>
           <p className={styles.subtitle}>
-            Fars dilini öyrənmək üçün nəşrə hazırlanan iki kitabımızla tanış olun. Kitablar asandan mürəkkəbə doğru inkişaf
-            etmək üçün seçilmiş mətnlərdən və qrammatika mövzularından ibarətdir.
+            Fars dilini öyrənmək üçün nəşrə hazırlanan üç kitabımızla tanış olun: qrammatika, söz ehtiyatı və oxu. Kitablar asandan
+            mürəkkəbə doğru inkişaf etmək üçün seçilmiş qrammatika mövzularından, söz mövzularından və mətnlərdən ibarətdir.
           </p>
           <div className={styles.buttons}>
             <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -81,7 +92,7 @@ export default function Kitablar() {
               ))}
             </div>
             <p className={styles.together}>
-              Hər iki kitab bir-birini tamamlayır. Bu kitabları birlikdə işləmək sizin fars dili biliyinizi möhkəmləndirəcək.
+              Üç kitab bir-birini tamamlayır. Bu kitabları birlikdə işləmək sizin fars dili biliyinizi möhkəmləndirəcək.
             </p>
           </div>
         </section>
