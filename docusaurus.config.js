@@ -71,8 +71,6 @@ const config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          // Answer pages of the books are reached by QR code and are noindex; only /cavablar (the list) is indexed.
-          ignorePatterns: ['/cavablar/qrammatika/**', '/cavablar/soz-ehtiyati/**', '/cavablar/oxu/**'],
         },
       }),
     ],
