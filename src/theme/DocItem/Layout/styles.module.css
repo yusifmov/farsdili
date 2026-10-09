@@ -1,0 +1,35 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+}
+
+/* Right column: book order box above the table of contents, on every lesson. */
+.sideCol {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  align-self: flex-start;
+}
+.sideCol > :global(.table-of-contents),
+.sideCol > [class*='tableOfContents'] {
+  position: static;
+  max-height: calc(100vh - var(--ifm-navbar-height) - 15rem);
+}
+
+@media (min-width: 997px) {
+  .mobileOrder {
+    display: none;
+  }
+}
