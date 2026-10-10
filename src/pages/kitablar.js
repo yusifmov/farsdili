@@ -1,17 +1,14 @@
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import {WHATSAPP_DISPLAY, whatsappUrl} from '@site/src/components/BookOrder';
 import styles from './kitablar.module.css';
-
-// Early sign-up goes to the author's WhatsApp with a ready-made first message.
-const WHATSAPP_NUMBER = '994507938033';
-const WHATSAPP_DISPLAY = '+994 50 793 80 33';
-const WHATSAPP_TEXT = 'Salam. Fars dili kitablarına əvvəlcədən yazılmaq istəyirəm.';
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`;
 
 const BOOKS = [
   {
     no: 'Qrammatika',
+    cover: 'qrammatika.jpg',
     title: 'Fars dilinin qrammatikası',
     fa: 'دستور زبان فارسی',
     points: [
@@ -23,6 +20,7 @@ const BOOKS = [
   },
   {
     no: 'Söz ehtiyatı',
+    cover: 'soz-ehtiyati.jpg',
     title: 'Fars dilinin söz ehtiyatı',
     fa: 'واژگان فارسی',
     points: [
@@ -34,6 +32,7 @@ const BOOKS = [
   },
   {
     no: 'Oxu',
+    cover: 'oxu.jpg',
     title: 'Fars dilində oxu',
     fa: 'خواندن فارسی',
     points: [
@@ -53,21 +52,22 @@ const FEATURES = [
 ];
 
 export default function Kitablar() {
+  const coverBase = useBaseUrl('/img/kitablar/');
   return (
     <Layout
       title="Fars dili kitabları"
-      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Əvvəlcədən yazılmaq üçün WhatsApp ilə əlaqə saxlayın.">
+      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Kitabları WhatsApp vasitəsilə sifariş edə bilərsiniz.">
       <header className={styles.hero}>
         <div className="container">
-          <p className={styles.kicker}>Tezliklə</p>
+          <p className={styles.kicker}>Satışda</p>
           <Heading as="h1" className={styles.title}>Fars dili kitabları</Heading>
           <p className={styles.subtitle}>
-            Fars dilini öyrənmək üçün nəşrə hazırlanan üç kitabımızla tanış olun: qrammatika, söz ehtiyatı və oxu. Kitablar asandan
+            Fars dilini öyrənmək üçün hazırladığımız üç kitabla tanış olun: qrammatika, söz ehtiyatı və oxu. Kitablar asandan
             mürəkkəbə doğru inkişaf etmək üçün seçilmiş qrammatika mövzularından, söz mövzularından və mətnlərdən ibarətdir.
           </p>
           <div className={styles.buttons}>
             <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              WhatsApp ilə əvvəlcədən yazılın
+              WhatsApp ilə sifariş verin
             </a>
             <a className="button button--secondary button--lg" href="#kitablar">Kitablarla tanış olun</a>
           </div>
@@ -80,6 +80,7 @@ export default function Kitablar() {
             <div className={styles.books}>
               {BOOKS.map((b) => (
                 <article key={b.no} className={styles.book}>
+                  <img className={styles.cover} src={coverBase + b.cover} alt={`“${b.title}” kitabının üz qabığı`} loading="lazy" width="600" height="847" />
                   <div className={styles.bookHead}>
                     <span className={styles.bookNo}>{b.no}</span>
                     <span className="fa">{b.fa}</span>
@@ -112,16 +113,16 @@ export default function Kitablar() {
 
         <section className={styles.section}>
           <div className={`container ${styles.signup}`}>
-            <Heading as="h2">Əvvəlcədən yazılın</Heading>
+            <Heading as="h2">Sifariş verin</Heading>
             <p>
-              Kitablar çapdan çıxanda ilk xəbər tutmaq və nüsxənizi əvvəlcədən sifariş etmək üçün WhatsApp vasitəsilə yazın:
+              Kitabları sifariş etmək, qiymət və çatdırılma barədə məlumat almaq üçün WhatsApp vasitəsilə yazın:
               {' '}<a href={whatsappUrl} target="_blank" rel="noopener noreferrer"><b>{WHATSAPP_DISPLAY}</b></a>.
             </p>
             <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              WhatsApp-da yazın
+              WhatsApp ilə sifariş verin
             </a>
             <p className={styles.small}>
-              Bu vaxta qədər saytdakı <Link to="/dersler">pulsuz dərslərlə</Link> başlaya bilərsiniz.
+              Kitablarla yanaşı saytdakı <Link to="/dersler">pulsuz dərslərdən</Link> də istifadə edə bilərsiniz.
             </p>
           </div>
         </section>

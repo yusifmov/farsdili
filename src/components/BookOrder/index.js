@@ -1,10 +1,11 @@
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-// Book orders go to the author's WhatsApp with a ready-made first message (same number as /kitablar).
+// Book orders go to the author's WhatsApp with a ready-made first message (also used on / and /kitablar).
 const WHATSAPP_NUMBER = '994507938033';
+export const WHATSAPP_DISPLAY = '+994 50 793 80 33';
 const WHATSAPP_TEXT = 'Salam. Fars dili kitablarını sifariş etmək istəyirəm.';
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`;
+export const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`;
 
 export default function BookOrder({className}) {
   return (

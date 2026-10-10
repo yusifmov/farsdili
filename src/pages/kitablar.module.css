@@ -73,6 +73,16 @@
   background: var(--ifm-background-surface-color);
 }
 
+.cover {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
 .bookHead {
   display: flex;
   justify-content: space-between;
