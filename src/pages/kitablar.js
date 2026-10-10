@@ -19,18 +19,6 @@ const BOOKS = [
     ],
   },
   {
-    no: 'Söz ehtiyatı',
-    cover: 'soz-ehtiyati.jpg',
-    title: 'Fars dilinin söz ehtiyatı',
-    fa: 'واژگان فارسی',
-    points: [
-      'Söz ehtiyatını artırmaq üçün 49 mövzu: gündəlik həyat, səyahət, sənədlər, sərhəd və gömrük',
-      'Mürəkkəb feillər, atalar sözləri və idiomlar',
-      'Azərbaycan dili ilə ortaq sözlər və “yalançı dostlar”',
-      'Söz cədvəlləri, ən çox işlənən sözlərin öyrənilməsi və düzgün işlədilmə qaydaları',
-    ],
-  },
-  {
     no: 'Oxu',
     cover: 'oxu.jpg',
     title: 'Fars dilində oxu',
@@ -40,6 +28,18 @@ const BOOKS = [
       'A1-dən B2-yə qədər 52 oxu mətni',
       'Hər mətndə lüğət, anlama sualları, söz çalışmaları və mətnin Tehran danışıq dilində dialoqu',
       'İran və Azərbaycanın ortaq mədəniyyəti haqqında mətnlər: Nizami, Şəhriyar, Novruz, Təbriz, klassik poeziya',
+    ],
+  },
+  {
+    no: 'Söz ehtiyatı',
+    cover: 'soz-ehtiyati.jpg',
+    title: 'Fars dilinin söz ehtiyatı',
+    fa: 'واژگان فارسی',
+    points: [
+      'Söz ehtiyatını artırmaq üçün 49 mövzu: gündəlik həyat, səyahət, sənədlər, sərhəd və gömrük',
+      'Mürəkkəb feillər, atalar sözləri və idiomlar',
+      'Azərbaycan dili ilə ortaq sözlər və “yalançı dostlar”',
+      'Söz cədvəlləri, ən çox işlənən sözlərin öyrənilməsi və düzgün işlədilmə qaydaları',
     ],
   },
 ];

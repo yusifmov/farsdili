@@ -35,8 +35,8 @@ function HomepageHeader() {
 
 const COVERS = [
   {slug: 'qrammatika', title: 'Fars dilinin qrammatikası'},
-  {slug: 'soz-ehtiyati', title: 'Fars dilinin söz ehtiyatı'},
   {slug: 'oxu', title: 'Fars dilində oxu'},
+  {slug: 'soz-ehtiyati', title: 'Fars dilinin söz ehtiyatı'},
 ];
 
 function HomepageBooks() {
