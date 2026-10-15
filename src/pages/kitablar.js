@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import {WHATSAPP_DISPLAY, whatsappUrl} from '@site/src/components/BookOrder';
+import {PlayButton} from '@site/src/components/BookOrder';
 import styles from './kitablar.module.css';
 
 const BOOKS = [
@@ -48,7 +48,7 @@ const FEATURES = [
   {title: 'Azərbaycan dilində izah', text: 'Bütün izahlar və tapşırıqlar Azərbaycan dilindədir; qrammatika Azərbaycan dili ilə müqayisədə izah olunur.'},
   {title: 'Tanış əlifba ilə oxunuş', text: 'Fars sözlərinin oxunuşu Azərbaycan latın əlifbası ilə verilir: کتاب — ketab, شب — şəb.'},
   {title: 'Danışıq dili', text: 'Hər bölmədə yazı dili ilə yanaşı Tehran danışıq dili də göstərilir.'},
-  {title: 'Cavablar QR kodla', text: 'Hər bölmənin sonundakı QR kod çalışmaların cavablarına aparır; cavablar bu saytda yerləşir.'},
+  {title: 'Cavablar saytda', text: 'Hər bölmənin sonunda çalışmaların cavablarına keçid var; cavablar bu saytda yerləşir.'},
 ];
 
 export default function Kitablar() {
@@ -56,19 +56,17 @@ export default function Kitablar() {
   return (
     <Layout
       title="Fars dili kitabları"
-      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Kitabları WhatsApp vasitəsilə sifariş edə bilərsiniz.">
+      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Kitablar Google Play-dəki “Fars dili kitabları” Android tətbiqində olacaq.">
       <header className={styles.hero}>
         <div className="container">
-          <p className={styles.kicker}>Satışda</p>
+          <p className={styles.kicker}>Tezliklə Google Play-də</p>
           <Heading as="h1" className={styles.title}>Fars dili kitabları</Heading>
           <p className={styles.subtitle}>
             Fars dilini öyrənmək üçün hazırladığımız üç kitabla tanış olun: qrammatika, söz ehtiyatı və oxu. Kitablar asandan
             mürəkkəbə doğru inkişaf etmək üçün seçilmiş qrammatika mövzularından, söz mövzularından və mətnlərdən ibarətdir.
           </p>
           <div className={styles.buttons}>
-            <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              WhatsApp ilə sifariş verin
-            </a>
+            <PlayButton size="lg" />
             <a className="button button--secondary button--lg" href="#kitablar">Kitablarla tanış olun</a>
           </div>
         </div>
@@ -113,16 +111,20 @@ export default function Kitablar() {
 
         <section className={styles.section}>
           <div className={`container ${styles.signup}`}>
-            <Heading as="h2">Sifariş verin</Heading>
+            <Heading as="h2">Google Play-də “Fars dili kitabları” tətbiqi</Heading>
             <p>
-              Kitabları sifariş etmək, qiymət və çatdırılma barədə məlumat almaq üçün WhatsApp vasitəsilə yazın:
-              {' '}<a href={whatsappUrl} target="_blank" rel="noopener noreferrer"><b>{WHATSAPP_DISPLAY}</b></a>.
+              Üç kitab Android telefonlar üçün bir tətbiqdə toplanır. Hər kitabın mündəricatı və hər fəslin ilk bir-iki
+              bölməsi pulsuz oxunur; kitabları ayrı-ayrılıqda və ya üçünü birlikdə endirimli qiymətlə almaq olar.
             </p>
-            <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              WhatsApp ilə sifariş verin
-            </a>
+            <ul className={styles.appPoints}>
+              <li>Alış Google hesabınıza bağlıdır: tətbiqi yenidən yükləsəniz və ya başqa telefonda eyni hesabla daxil olsanız, kitablar yenə açılır.</li>
+              <li>Kitablar internetsiz oxunur; səhifələr A4 kitab görünüşündə və ya telefonun eninə uyğun axıcı mətn kimi göstərilir.</li>
+              <li>Hər bölmənin irəliləyişi görünür; bölmələri ulduzla işarələmək və onlara qeyd yazmaq olar.</li>
+            </ul>
+            <PlayButton size="lg" />
             <p className={styles.small}>
               Kitablarla yanaşı saytdakı <Link to="/dersler">pulsuz dərslərdən</Link> də istifadə edə bilərsiniz.
+              Tətbiqin <Link to="/mexfilik-siyaseti">məxfilik siyasəti</Link>.
             </p>
           </div>
         </section>

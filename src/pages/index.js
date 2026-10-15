@@ -4,7 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import {whatsappUrl} from '@site/src/components/BookOrder';
+import {PlayButton} from '@site/src/components/BookOrder';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -46,8 +46,8 @@ function HomepageBooks() {
       <div className="container">
         <Heading as="h2" className={styles.booksTitle}>Fars dili kitabları</Heading>
         <p className={styles.booksText}>
-          “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu” kitabları satışdadır.
-          Kitabları WhatsApp vasitəsilə sifariş edə bilərsiniz.
+          “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu” kitabları tezliklə Google Play-də
+          “Fars dili kitabları” tətbiqində olacaq. Hər kitabın mündəricatı və ilk bölmələri pulsuz oxunur.
         </p>
         <Link to="/kitablar" className={styles.covers}>
           {COVERS.map((c) => (
@@ -56,9 +56,7 @@ function HomepageBooks() {
           ))}
         </Link>
         <div className={styles.buttons}>
-          <a className={`button button--lg ${styles.whatsapp}`} href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            WhatsApp ilə sifariş verin
-          </a>
+          <PlayButton size="lg" />
           <Link className="button button--secondary button--lg" to="/kitablar">
             Kitablar haqqında
           </Link>

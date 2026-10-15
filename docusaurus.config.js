@@ -124,6 +124,7 @@ const config = {
             title: 'Digər',
             items: [
               {label: 'GitHub', href: 'https://github.com/yusifmov/farsdili'},
+              {label: 'Məxfilik siyasəti', to: '/mexfilik-siyaseti'},
             ],
           },
         ],

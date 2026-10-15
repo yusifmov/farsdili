@@ -67,18 +67,6 @@
 .covers:hover .cover {
   transform: translateY(-3px);
 }
-.whatsapp {
-  background: #25d366;
-  border-color: #25d366;
-  color: #fff;
-}
-.whatsapp:hover {
-  background: #1ebe5a;
-  border-color: #1ebe5a;
-  color: #fff;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 768px) {
   .heroBanner {
     padding: 3.5rem 1rem 3rem;

@@ -1,6 +1,6 @@
 /**
  * Ejected from @docusaurus/theme-classic 3.10.1 (DocItem/Layout).
- * Change: the right column is always shown on desktop and holds the book order box (BookOrder) above the TOC;
+ * Change: the right column is always shown on desktop and holds the books box (BookOrder, Google Play) above the TOC;
  * on narrow screens the box is shown after the lesson text.
  */
 import React from 'react';
