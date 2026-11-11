@@ -46,8 +46,8 @@ function HomepageBooks() {
       <div className="container">
         <Heading as="h2" className={styles.booksTitle}>Fars dili kitabları</Heading>
         <p className={styles.booksText}>
-          “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu” kitabları tezliklə Google Play-də
-          “Fars dili kitabları” tətbiqində olacaq. Hər kitabın mündəricatı və ilk bölmələri pulsuz oxunur.
+          “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu” kitabları Google Play-dəki
+          “Fars dili kitabları” tətbiqindədir. Hər kitabın mündəricatı və ilk bölmələri pulsuz oxunur.
         </p>
         <Link to="/kitablar" className={styles.covers}>
           {COVERS.map((c) => (
