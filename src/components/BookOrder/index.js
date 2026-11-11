@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 // The books are sold only in the Android app "Fars dili kitabları" on Google Play (also used on / and /kitablar).
 // Set PLAY_LIVE to true once the app is published: the buttons then link to its Play page.
-export const PLAY_LIVE = false;
+export const PLAY_LIVE = true;
 export const PLAY_URL = 'https://play.google.com/store/apps/details?id=az.farsdili.kitablar';
 
 /** "Google Play-də yükləyin" (a link) once the app is live; until then a plain "Tezliklə Google Play-də" label. */

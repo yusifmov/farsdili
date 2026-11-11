@@ -56,10 +56,10 @@ export default function Kitablar() {
   return (
     <Layout
       title="Fars dili kitabları"
-      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Kitablar Google Play-dəki “Fars dili kitabları” Android tətbiqində olacaq.">
+      description="Azərbaycan dilli tələbələr üçün üç fars dili kitabı: “Fars dilinin qrammatikası”, “Fars dilinin söz ehtiyatı” və “Fars dilində oxu”. Kitablar Google Play-dəki “Fars dili kitabları” Android tətbiqindədir.">
       <header className={styles.hero}>
         <div className="container">
-          <p className={styles.kicker}>Tezliklə Google Play-də</p>
+          <p className={styles.kicker}>Google Play-də</p>
           <Heading as="h1" className={styles.title}>Fars dili kitabları</Heading>
           <p className={styles.subtitle}>
             Fars dilini öyrənmək üçün hazırladığımız üç kitabla tanış olun: qrammatika, söz ehtiyatı və oxu. Kitablar asandan
